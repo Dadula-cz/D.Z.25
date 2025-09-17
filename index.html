@@ -79,6 +79,52 @@
       document.getElementById(pageId).classList.add('active');
     }
   </script>
+ <meta charset="UTF-8">
+    <title>Hudba</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 30px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .card h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .play-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .play-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Hudba</h2>
+        <button class="play-button" onclick="document.getElementById('song').play()">▶️ Spustit píseň</button>
+        <audio id="song" src="citim_vonu_lesa.mp3"></audio>
+    </div>
    </body>
 </html>
